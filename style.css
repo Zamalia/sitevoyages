@@ -1,0 +1,249 @@
+/* styles généraux */
+* {
+    margin: 0;
+  }
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.9em;
+    background-color: #ffffff;
+    text-align: justify;
+}
+
+main{
+    margin: 20px 100px 0px 100px;
+}
+
+p{
+    margin-bottom: 15px;
+}
+
+h2{
+    background-color: #007EA7;
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    padding: 2px 0 2px 10px;
+}
+
+h3{
+    color: #007EA7;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+h4{
+    font-size: 1.7em;
+    margin: 15px 0 20px 0;
+    color: #00171f;
+}
+
+/* mise en forme de l'en-tête du site*/
+
+h1{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Satisfy', cursive;
+    font-size : 3em;
+    color: #00171f;
+}
+
+header img{
+    height: 3.3em;
+    width: auto;
+}
+
+header,
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+  }
+
+.en-tete{
+    background-color: #c0d6df;
+    border-bottom: 2px #9ab1ba solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 20px 7px 50px;
+    margin-bottom: 2em;
+}
+
+.element-en-tete{
+    font-size: 1em;
+    margin: 10px;
+    text-decoration: none;
+    color: #00171f;
+}
+
+.element-en-tete:hover{
+    text-decoration: underline;
+}
+
+.element-en-tete:active{
+    background-color: #2f3e46;
+    color: white;
+}
+
+a:visited{
+    color: black;
+}
+
+/*styles propres à accueil.html*/
+
+.banderole{
+    display: flex;
+    height: 240px;
+    width: auto;
+}
+
+.banderole img{
+    border: 1px solid black;
+}
+
+.presentation{
+    display: flex;
+}
+
+.presentation-portrait{
+    height: 170px;
+    width: 110%;
+    border: 1px solid black;
+    margin-left: 20px;
+}
+
+/* styles propres à voyages.html */
+
+/*Présentation de mes derniers voyages*/
+
+img[src*="JPG"],
+img[src*="jpg"]{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.canaries,
+.irlande,
+.italie,
+.pays-bas,
+.republique-tcheque{
+    background-color: #003459;
+    padding: 20px;
+    margin: 5px;
+    display: grid;
+    grid-gap: 10px;
+}
+
+.irlande{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.canaries,
+.italie,
+.pays-bas{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+}
+
+.republique-tcheque{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+     /*Liste des destinations visitées*/
+
+h5{
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: center;
+    margin-top: 25px;
+    border-bottom: 1px dotted gray;
+}
+
+.europe,
+.afrique,
+.asie{
+    font-family: 'Satisfy', cursive;
+    font-size: 1.4em;
+    display: grid;
+    align-items: center;
+    grid-gap: 30px;
+}
+
+.europe{
+    grid-template-columns: 1fr 1fr 1.7fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+}
+
+.afrique,
+.asie{
+    grid-template-rows: 100px;
+}
+
+.afrique{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.asie{
+    grid-template-columns: 1fr 1fr;
+}
+
+.europe img,
+.asie img,
+.afrique img{
+    height: 1.5em;
+    width: auto;
+    margin-right: 10px;
+}
+
+.pays-europe,
+.pays-afrique,
+.pays-asie{
+    border: 1px #00171f dotted;
+    border-radius: 30px;
+    /*box-shadow: 2px 2px 10px #00171f;*/
+    background: linear-gradient(#dce1de,#adf7b6);
+    display: flex;
+    justify-content: center;
+}
+
+/* Propriétés du footer*/
+
+footer{
+    background-color: #c0d6df;
+    border-top: 2px #9ab1ba solid;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer img{
+    height: 50px;
+}
+
+.footer p{
+    width: 200px;
+    font-family: 'Satisfy', cursive;
+    font-size: 1.3em;
+}
+
+.mentions-legales p{
+    color: gray;
+    font-size: 0.7em;
+    margin-bottom: 0px;
+}
+
+.mentions-legales{
+    margin-top: 15px;
+}
